@@ -1,5 +1,6 @@
 @main-pink: #F26376;
-@main-pink2: #F16D7F;
+@main-pink2: #F26376;
+@btn-btn-hover: #f70424;
 @main-font: Lato, sans-serif;
 @color-btn-gr: #a4a4a4;
 @color-gray: #6F6E6E;
@@ -125,12 +126,8 @@ body {
     list-style-type: none;
     padding: 0;
 
-    li:first-child {
-        margin: 12px, 0 0 20px;
-    }
-
-    li:nth-child(2, 3, 4, 5, 6) {
-        margin: 11px, 0 0 20px;
+    li {
+        margin: 12px 0 0 20px;
     }
 }
 
@@ -490,6 +487,11 @@ body {
     padding: 16px 20px;
 }
 
+.feedback-button:hover {
+    background: #f70424;
+    transition: 200ms;
+  }
+
 .feedback-button a {
     text-decoration: none;
     color: #FFFFFF;
@@ -534,6 +536,7 @@ body {
 .logo-footer:hover {
     background-color: @main-pink;
     color: #ffffff;
+    transition: 200ms;
 }
 
 .social {
@@ -1024,7 +1027,13 @@ body {
     height: 34px;
     .bordered(#a4a4a4);
     text-transform: uppercase;
-}
+    }
+
+    .getaQuote:hover {
+        transition: 200ms;
+        background-color: @btn-btn-hover;
+        color: #F4F3F3;
+    }
 
 .cart-summary {
     width: 360px;
@@ -1046,6 +1055,13 @@ body {
     border-style: none;
     margin: 17px 43px 0 0;
     cursor: pointer;
+       
+}
+
+.cart-checkout-btn:hover {
+    background-color: @btn-btn-hover;
+    color: #ffffff;
+    transition: 200ms;        
 }
 
 .cart-subtotal {
@@ -1159,6 +1175,10 @@ body {
     margin: 39px 0 0 0;
     border: none;
 }
+.registration-join-btn:hover {
+    background-color: @btn-btn-hover;
+    transition: 200ms;
+    } 
 
 .text-perks {
     .font(300, 24px, 29px);
